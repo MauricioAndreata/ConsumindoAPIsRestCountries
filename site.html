@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mauricio Andreata - Consumindo APIs</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1 id="titulo">Mauricio Andreata - Consumindo APIs</h1>
+
+    <h2>Selecione um país:</h2>
+
+    <div class="pesquisa">
+        <select name="paises" id="paises" onchange="mostrarInformacoes()">
+            <option value="null"></option>
+        </select>
+    </div>
+
+    <div class="resultado">
+        <div class="bandeira">
+            <div class="tituloBandeira"><img src="images/flag.svg" width="35"> Bandeira:</div>
+            <div class="fotoBandeira"></div>
+        </div>        
+
+        <div class="informacoes">
+            <div class="informacao nome"></div>
+            <div class="informacao capital"></div>
+            <div class="informacao continente"></div>
+            <div class="informacao populacao"></div>
+            <div class="informacao area"></div>
+            <div class="informacao moedas"></div>
+            <div class="informacao idiomas"></div>
+        </div>
+    </div>
+    
+
+    <script src="api.js"></script>
+</body>
+</html>
